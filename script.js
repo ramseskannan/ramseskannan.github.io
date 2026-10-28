@@ -5,30 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-
-  if (navToggle && navLinks) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', String(isOpen));
-      navToggle.classList.toggle('active', isOpen);
-    });
-
-    // Close menu after clicking a link (mobile)
-    navLinks.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  }
-
-  // Scroll-reveal for sections/cards
-  const revealTargets = document.querySelectorAll(
-    '.timeline-item, .project-card, .meta-card, .about-text, .contact-card'
-  );
+  // Scroll-reveal for content blocks
+  const revealTargets = document.querySelectorAll('.block, .entry');
 
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(
@@ -40,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
     );
 
     revealTargets.forEach((el) => {

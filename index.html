@@ -4,303 +4,287 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ramya Kannan — Software Engineer</title>
-<meta name="description" content="Ramya Kannan — Software Engineer & Electrical Engineering student at Texas A&M. Full-stack development, embedded systems, and hardware-software projects." />
+<meta name="description" content="Ramya Kannan — Software Engineer & Electrical Engineering student at Texas A&M. Pluck a string to explore." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ===== Nav ===== -->
-<header class="nav" id="nav">
-  <div class="nav-inner container">
-    <a href="#top" class="nav-brand"><span class="brand-bracket">&lt;</span>Ramya Kannan<span class="brand-bracket">/&gt;</span></a>
-    <nav class="nav-links" id="navLinks">
+<a href="#top" class="corner-mark">RK</a>
+<a href="assets/Ramya_Kannan_Resume.pdf" class="corner-resume" target="_blank" rel="noopener">Resume ↗</a>
+
+<header class="hero" id="top">
+  <div class="hero-intro">
+    <p class="eyebrow">Software Engineer</p>
+    <h1>Ramya Kannan</h1>
+    <p class="tagline">Electrical Engineering student at Texas A&amp;M, building full-stack systems — and sometimes the hardware underneath them.</p>
+  </div>
+
+  <div class="guitar" role="navigation" aria-label="Site sections">
+
+    <svg class="guitar-svg" viewBox="0 0 1300 260" preserveAspectRatio="xMidYMid meet" aria-hidden="false">
+
+      <!-- headstock pegs -->
+      <g class="pegs" aria-hidden="true">
+        <circle cx="15" cy="30" r="5"></circle>
+        <circle cx="15" cy="70" r="5"></circle>
+        <circle cx="15" cy="110" r="5"></circle>
+        <circle cx="15" cy="150" r="5"></circle>
+        <circle cx="15" cy="190" r="5"></circle>
+        <circle cx="15" cy="230" r="5"></circle>
+      </g>
+
+      <!-- nut -->
+      <line class="nut" x1="90" y1="14" x2="90" y2="246" aria-hidden="true"></line>
+
+      <!-- frets -->
+      <g class="frets" aria-hidden="true">
+        <line x1="241.7" y1="20" x2="241.7" y2="240"></line>
+        <line x1="393.3" y1="20" x2="393.3" y2="240"></line>
+        <line x1="545" y1="20" x2="545" y2="240"></line>
+        <line x1="696.7" y1="20" x2="696.7" y2="240"></line>
+        <line x1="848.3" y1="20" x2="848.3" y2="240"></line>
+      </g>
+
+      <!-- fret marker dots -->
+      <g class="fret-dots" aria-hidden="true">
+        <circle cx="317.5" cy="110" r="4"></circle>
+        <circle cx="620.8" cy="110" r="4"></circle>
+      </g>
+
+      <!-- strings — each one a real link to a section -->
+      <a href="#about" class="string-link" aria-label="About">
+        <g>
+          <line class="string-hit" x1="25" y1="30" x2="1000" y2="30"></line>
+          <line class="string-line" x1="25" y1="30" x2="1000" y2="30" style="stroke-width:3.2"></line>
+          <text x="1030" y="37" class="string-label">About</text>
+        </g>
+      </a>
+
+      <a href="#experience" class="string-link" aria-label="Experience">
+        <g>
+          <line class="string-hit" x1="25" y1="70" x2="1000" y2="70"></line>
+          <line class="string-line" x1="25" y1="70" x2="1000" y2="70" style="stroke-width:2.6"></line>
+          <text x="1030" y="77" class="string-label">Experience</text>
+        </g>
+      </a>
+
+      <a href="#skills" class="string-link" aria-label="Skills">
+        <g>
+          <line class="string-hit" x1="25" y1="110" x2="1000" y2="110"></line>
+          <line class="string-line" x1="25" y1="110" x2="1000" y2="110" style="stroke-width:2.1"></line>
+          <text x="1030" y="117" class="string-label">Skills</text>
+        </g>
+      </a>
+
+      <a href="#projects" class="string-link" aria-label="Projects">
+        <g>
+          <line class="string-hit" x1="25" y1="150" x2="1000" y2="150"></line>
+          <line class="string-line" x1="25" y1="150" x2="1000" y2="150" style="stroke-width:1.6"></line>
+          <text x="1030" y="157" class="string-label">Projects</text>
+        </g>
+      </a>
+
+      <a href="#leadership" class="string-link" aria-label="Leadership">
+        <g>
+          <line class="string-hit" x1="25" y1="190" x2="1000" y2="190"></line>
+          <line class="string-line" x1="25" y1="190" x2="1000" y2="190" style="stroke-width:1.2"></line>
+          <text x="1030" y="197" class="string-label">Leadership</text>
+        </g>
+      </a>
+
+      <a href="#contact" class="string-link" aria-label="Contact">
+        <g>
+          <line class="string-hit" x1="25" y1="230" x2="1000" y2="230"></line>
+          <line class="string-line" x1="25" y1="230" x2="1000" y2="230" style="stroke-width:0.9"></line>
+          <text x="1030" y="237" class="string-label">Contact</text>
+        </g>
+      </a>
+
+    </svg>
+
+    <!-- mobile fallback: same 6 links, plain list, shown only on small screens -->
+    <nav class="string-fallback" aria-label="Site sections">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#leadership">Leadership</a>
       <a href="#contact">Contact</a>
-      <a href="assets/Ramya_Kannan_Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+
+    <p class="guitar-hint">pluck a string to explore ↑</p>
   </div>
 </header>
 
 <main>
 
-  <!-- ===== Hero ===== -->
-  <section class="hero" id="top">
-    <div class="container hero-inner">
-      <p class="hero-kicker"><span class="status-dot"></span>Open to Software Engineering roles</p>
-      <h1 class="hero-title">
-        Hi, I'm <span class="accent">Ramya Kannan</span>.<br />
-        I build full-stack systems — and sometimes the hardware underneath them too.
-      </h1>
-      <p class="hero-sub">
-        Electrical Engineering student at Texas A&amp;M University, currently working on real-time dashboards, embedded devices, and everything in between.
+  <section class="block" id="about">
+    <p class="block-index">01</p>
+    <h2>About</h2>
+    <div class="block-body">
+      <p>
+        I'm an Electrical Engineering student at Texas A&amp;M University (minor in Mathematics, graduating May 2028)
+        who ended up falling for software along the way. Most recently, I spent a summer at
+        <strong>American Airlines</strong> building a full-stack operations dashboard that gives 10+ daily users
+        real-time visibility into 5,000+ cameras across 100+ sites — consolidating four separate systems into one
+        view and cutting incident investigation time by 40%.
       </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
-      </div>
-      <div class="hero-links">
-        <a href="https://github.com/ramseskannan" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 5 3.24 9.24 7.74 10.74.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.15.68-3.81-1.52-3.81-1.52-.52-1.3-1.26-1.65-1.26-1.65-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.52-2.52-.29-5.16-1.26-5.16-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.73 0c2.18-1.47 3.14-1.16 3.14-1.16.63 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.17 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/ramya-kannan-996a27336" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
-        </a>
-        <a href="mailto:rramyakantx@gmail.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1 7.8-6.1H4.2Zm15.8 1.4-7.3 5.7a1.5 1.5 0 0 1-1.84 0L3.6 7.4v11.1h16.4V7.4Z"/></svg>
-        </a>
-      </div>
-    </div>
-    <a href="#about" class="scroll-cue" aria-hidden="true"><span></span></a>
-  </section>
-
-  <!-- ===== About ===== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="glass-panel">
-      <p class="section-kicker">01 · About</p>
-      <h2 class="section-title">A bit about me</h2>
-
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I'm an Electrical Engineering student at Texas A&amp;M University (minor in Mathematics, graduating May 2028)
-            who ended up falling for software along the way. Most recently, I spent a summer at
-            <strong>American Airlines</strong> building a full-stack operations dashboard that gives 10+ daily users
-            real-time visibility into <strong>5,000+ cameras across 100+ sites</strong> — consolidating four separate
-            systems into one view and cutting incident investigation time by <strong>40%</strong>.
-          </p>
-          <p>
-            I like projects that sit at the intersection of hardware and software: I've programmed microcontrollers
-            for a low-cost hearing aid, built booking software a small business still uses today, and tutor students
-            through the CS and engineering concepts I'm learning myself. Outside of building things, I help run
-            <strong>TAMUhack</strong>, one of the country's largest student-run hackathons, as Logistics Director.
-          </p>
-          <p>
-            I'm currently looking for <strong>Software Engineering</strong> roles where I can keep building systems
-            that people actually rely on.
-          </p>
+      <p>
+        I like projects that sit at the intersection of hardware and software: I've programmed microcontrollers for
+        a low-cost hearing aid, built booking software a small business still uses today, and tutor students through
+        the CS and engineering concepts I'm learning myself. I'm currently looking for Software Engineering roles
+        where I can keep building systems that people actually rely on.
+      </p>
+      <div class="meta-row">
+        <div>
+          <span class="meta-label">Education</span>
+          <p>Texas A&amp;M University — B.S. Electrical Engineering, Minor in Mathematics<br>Graduating May 2028</p>
         </div>
-
-        <div class="about-meta">
-          <div class="meta-card">
-            <h3>Education</h3>
-            <p class="meta-primary">Texas A&amp;M University</p>
-            <p class="meta-secondary">B.S. Electrical Engineering, Minor in Mathematics</p>
-            <p class="meta-secondary">Graduating May 2028</p>
-          </div>
-          <div class="meta-card">
-            <h3>Based in</h3>
-            <p class="meta-primary">Sammamish, WA</p>
-            <p class="meta-secondary">Studying in College Station, TX</p>
-          </div>
+        <div>
+          <span class="meta-label">Based in</span>
+          <p>Sammamish, WA — studying in College Station, TX</p>
         </div>
-      </div>
-
-      <div class="skills">
-        <h3 class="skills-label">Technical Skills</h3>
-        <div class="skill-group">
-          <span class="skill-group-label">Languages</span>
-          <div class="tags">
-            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C++</span>
-            <span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">Verilog</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <span class="skill-group-label">Frameworks &amp; Tools</span>
-          <div class="tags">
-            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span>
-            <span class="tag">Tailwind CSS</span><span class="tag">JavaFX</span><span class="tag">Docker</span>
-            <span class="tag">Kubernetes</span><span class="tag">Jest</span><span class="tag">NextAuth</span><span class="tag">Git</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <span class="skill-group-label">Systems &amp; Infrastructure</span>
-          <div class="tags">
-            <span class="tag">REST APIs</span><span class="tag">ServiceNow</span><span class="tag">OpenTelemetry</span>
-            <span class="tag">LDAP</span><span class="tag">MySQL</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <span class="skill-group-label">Hardware &amp; Engineering</span>
-          <div class="tags">
-            <span class="tag">FPGA</span><span class="tag">Digital Design</span><span class="tag">Arduino</span>
-            <span class="tag">Signal Processing</span><span class="tag">Analog Circuit Design</span>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Experience ===== -->
-  <section class="section" id="experience">
-    <div class="container">
-      <div class="glass-panel">
-      <p class="section-kicker">02 · Experience</p>
-      <h2 class="section-title">Where I've worked</h2>
+  <section class="block" id="experience">
+    <p class="block-index">02</p>
+    <h2>Experience</h2>
+    <div class="block-body">
 
-      <div class="timeline">
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Software Developer Intern</h3>
+          <span class="entry-date">Jun 2026 – Aug 2026</span>
+        </div>
+        <p class="entry-org">American Airlines · Fort Worth, TX</p>
+        <ul>
+          <li>Built a full-stack operations dashboard (Next.js 15, React 19, TypeScript) delivering real-time visibility into 5,000+ cameras across 100+ sites.</li>
+          <li>Integrated 4 REST APIs (Dynatrace, Nucleus, BigPanda, Avigilon Alta), consolidating system health, security risk, and incident data into a centralized view.</li>
+          <li>Designed a VMS Performance Metrics dashboard with 15+ live metrics and automated alerts, reducing manual incident investigation time by 40% for 10+ daily users.</li>
+          <li>Supported a VMS platform migration across 20+ locations with minimal unplanned monitoring downtime.</li>
+        </ul>
+      </article>
 
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Software Developer Intern</h3>
-              <span class="timeline-date">Jun 2026 – Aug 2026</span>
-            </div>
-            <p class="timeline-org">American Airlines · Fort Worth, TX</p>
-            <ul>
-              <li>Built a full-stack operations dashboard (Next.js 15, React 19, TypeScript) delivering real-time visibility into 5,000+ cameras across 100+ sites in American Airlines' network.</li>
-              <li>Integrated 4 REST APIs (Dynatrace, Nucleus, BigPanda, Avigilon Alta), consolidating system health, security risk, and incident data into a centralized view.</li>
-              <li>Designed a VMS Performance Metrics dashboard with 15+ live metrics and automated alerts, reducing manual incident investigation time by 40% for 10+ daily users.</li>
-              <li>Supported a VMS platform migration across 20+ locations, running network assessments and infrastructure coordination with minimal unplanned monitoring downtime.</li>
-            </ul>
-            <div class="tags tags-sm">
-              <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">REST APIs</span>
-            </div>
-          </div>
-        </article>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Tutor</h3>
+          <span class="entry-date">Jan 2026 – Present</span>
+        </div>
+        <p class="entry-org">Tutor Pritch · College Station, TX</p>
+        <ul>
+          <li>Tutor students in mathematics, computer science, and engineering coursework, adapting explanations to individual learning needs.</li>
+        </ul>
+      </article>
 
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Tutor</h3>
-              <span class="timeline-date">Jan 2026 – Present</span>
-            </div>
-            <p class="timeline-org">Tutor Pritch · College Station, TX</p>
-            <ul>
-              <li>Tutor students in mathematics, computer science, and engineering coursework, adapting explanations and problem-solving strategies to individual learning needs.</li>
-            </ul>
-          </div>
-        </article>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Intern (Remote)</h3>
+          <span class="entry-date">Jun 2023 – Aug 2023</span>
+        </div>
+        <p class="entry-org">e24 Technologies · Sammamish, WA</p>
+        <ul>
+          <li>Researched and applied AI/ML techniques in Python, working with database management systems to support data-driven features.</li>
+          <li>Designed and implemented a chatbot with AI/ML-driven response logic to enhance user experience.</li>
+        </ul>
+      </article>
 
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Intern (Remote)</h3>
-              <span class="timeline-date">Jun 2023 – Aug 2023</span>
-            </div>
-            <p class="timeline-org">e24 Technologies · Sammamish, WA</p>
-            <ul>
-              <li>Researched and applied AI/ML techniques in Python, working with database management systems to support data-driven features.</li>
-              <li>Designed and implemented a chatbot with AI/ML-driven response logic to enhance user experience.</li>
-            </ul>
-            <div class="tags tags-sm">
-              <span class="tag">Python</span><span class="tag">AI/ML</span><span class="tag">Databases</span>
-            </div>
-          </div>
-        </article>
+    </div>
+  </section>
 
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Logistics Director</h3>
-              <span class="timeline-date">Apr 2026 – Present</span>
-            </div>
-            <p class="timeline-org">TAMUhack · College Station, TX</p>
-            <ul>
-              <li>Coordinating logistics for TAMUhack 2027, one of the university's largest annual hackathons.</li>
-              <li>Supporting an event that hosted 484 in-person hackers from 27 schools in 2026, amid a record 1,554 applications.</li>
-            </ul>
-          </div>
-        </article>
-
+  <section class="block" id="skills">
+    <p class="block-index">03</p>
+    <h2>Skills</h2>
+    <div class="block-body skills-body">
+      <div class="skill-row">
+        <span class="meta-label">Languages</span>
+        <p>Python · Java · C++ · TypeScript · JavaScript · SQL · Verilog</p>
       </div>
+      <div class="skill-row">
+        <span class="meta-label">Frameworks &amp; Tools</span>
+        <p>React · Next.js · Node.js · Tailwind CSS · JavaFX · Docker · Kubernetes · Jest · NextAuth · Git</p>
+      </div>
+      <div class="skill-row">
+        <span class="meta-label">Systems &amp; Infrastructure</span>
+        <p>REST APIs · ServiceNow · OpenTelemetry · LDAP · MySQL</p>
+      </div>
+      <div class="skill-row">
+        <span class="meta-label">Hardware &amp; Engineering</span>
+        <p>FPGA · Digital Design · Arduino · Signal Processing · Analog Circuit Design</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== Projects ===== -->
-  <section class="section" id="projects">
-    <div class="container">
-      <p class="section-kicker">03 · Projects</p>
-      <h2 class="section-title">Things I've built</h2>
+  <section class="block" id="projects">
+    <p class="block-index">04</p>
+    <h2>Projects</h2>
+    <div class="block-body">
 
-      <div class="project-grid">
-
-        <article class="project-card">
-          <div class="project-card-top">
-            <span class="project-year">2026</span>
-          </div>
+      <article class="entry">
+        <div class="entry-head">
           <h3>Low-Cost Intelligent Hearing Aid</h3>
-          <p>
-            An affordable hearing aid built around a 4-band analog frequency filter and adjustable digital gain
-            control. Programmed an Arduino Mega to handle UI control, EEPROM settings storage, and SPI communication
-            with digital potentiometers.
-          </p>
-          <div class="tags tags-sm">
-            <span class="tag">Arduino</span><span class="tag">Analog Circuit Design</span><span class="tag">Signal Processing</span>
-          </div>
-        </article>
+          <span class="entry-date">2026</span>
+        </div>
+        <p>
+          An affordable hearing aid built around a 4-band analog frequency filter and adjustable digital gain
+          control. Programmed an Arduino Mega to handle UI control, EEPROM settings storage, and SPI communication
+          with digital potentiometers.
+        </p>
+        <p class="entry-stack">Arduino · Analog Circuit Design · Signal Processing</p>
+      </article>
 
-        <article class="project-card">
-          <div class="project-card-top">
-            <span class="project-year">2024</span>
-          </div>
+      <article class="entry">
+        <div class="entry-head">
           <h3>Dog Daycare Management App</h3>
-          <p>
-            A booking management system built for a small business client and deployed for real-world use, handling
-            100+ bookings and pet profiles across multiple businesses with complex SQL joins and queries. Applies the
-            Singleton pattern, SMTP email notifications, and lambda-based search.
-          </p>
-          <div class="tags tags-sm">
-            <span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">MySQL</span>
-          </div>
-        </article>
+          <span class="entry-date">2024</span>
+        </div>
+        <p>
+          A booking management system built for a small business client and deployed for real-world use, handling
+          100+ bookings and pet profiles across multiple businesses with complex SQL joins and queries. Applies the
+          Singleton pattern, SMTP email notifications, and lambda-based search.
+        </p>
+        <p class="entry-stack">Java · JavaFX · MySQL</p>
+      </article>
 
-      </div>
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
-  <section class="section section-contact" id="contact">
-    <div class="container contact-inner">
-      <p class="section-kicker">04 · Contact</p>
-      <h2 class="section-title">Let's talk</h2>
-      <p class="contact-sub">
-        I'm actively looking for Software Engineering opportunities — if you'd like to chat, reach out any of these ways.
-      </p>
+  <section class="block" id="leadership">
+    <p class="block-index">05</p>
+    <h2>Leadership</h2>
+    <div class="block-body">
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Logistics Director</h3>
+          <span class="entry-date">Apr 2026 – Present</span>
+        </div>
+        <p class="entry-org">TAMUhack · College Station, TX</p>
+        <ul>
+          <li>Coordinating logistics for TAMUhack 2027, one of the university's largest annual hackathons.</li>
+          <li>Supporting an event that hosted 484 in-person hackers from 27 schools in 2026, amid a record 1,554 applications.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
-      <div class="contact-cards">
-        <a class="contact-card" href="mailto:rramyakantx@gmail.com">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1 7.8-6.1H4.2Zm15.8 1.4-7.3 5.7a1.5 1.5 0 0 1-1.84 0L3.6 7.4v11.1h16.4V7.4Z"/></svg>
-          <span>
-            <strong>Email</strong>
-            <small>rramyakantx@gmail.com</small>
-          </span>
-        </a>
-        <a class="contact-card" href="https://github.com/ramseskannan" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 5 3.24 9.24 7.74 10.74.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.15.68-3.81-1.52-3.81-1.52-.52-1.3-1.26-1.65-1.26-1.65-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.52-2.52-.29-5.16-1.26-5.16-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.73 0c2.18-1.47 3.14-1.16 3.14-1.16.63 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.17 5.59.41.35.77 1.04.77 2.11 0 1.52-.01 2.75-.01 3.12 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
-          <span>
-            <strong>GitHub</strong>
-            <small>github.com/ramseskannan</small>
-          </span>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/ramya-kannan-996a27336" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
-          <span>
-            <strong>LinkedIn</strong>
-            <small>in/ramya-kannan</small>
-          </span>
-        </a>
-        <a class="contact-card" href="assets/Ramya_Kannan_Resume.pdf" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm8 1.5V8h4.5L14 3.5ZM8 13h8v1.5H8V13Zm0 3h8v1.5H8V16Zm0-6h4v1.5H8V10Z"/></svg>
-          <span>
-            <strong>Resume</strong>
-            <small>Download PDF</small>
-          </span>
-        </a>
+  <section class="block block-contact" id="contact">
+    <p class="block-index">06</p>
+    <h2>Contact</h2>
+    <div class="block-body">
+      <p class="contact-line">
+        I'm actively looking for Software Engineering opportunities.
+        <a href="mailto:rramyakantx@gmail.com" class="contact-email">rramyakantx@gmail.com</a>
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/ramseskannan" target="_blank" rel="noopener">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/ramya-kannan-996a27336" target="_blank" rel="noopener">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="assets/Ramya_Kannan_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
       </div>
     </div>
   </section>
@@ -308,10 +292,7 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer-inner">
-    <p>Designed &amp; built by Ramya Kannan.</p>
-    <p class="footer-year">&copy; <span id="year"></span></p>
-  </div>
+  <p>Designed &amp; built by Ramya Kannan · <span id="year"></span></p>
 </footer>
 
 <script src="script.js"></script>
